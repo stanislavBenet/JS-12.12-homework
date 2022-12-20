@@ -27,3 +27,19 @@ const user = {
    },
    profession: "actor",
 };
+
+
+
+const {
+   privateInfo: {
+      bday: { year: birthdayYear },
+   },
+   privateInfo: {
+      children: [, secondChild],
+   },
+   contactInfo: {
+      phone: { work: jobPhone },
+   },
+} = user;
+
+console.log(birthdayYear, secondChild, jobPhone);
